@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Manrope", sans-serif;
+    background-color: hsl(218, 23%, 16%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container {
+    padding: 1rem;
+    width: 100%;
+  }
+  
+  .card {
+    background-color: hsl(217, 19%, 24%);
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem 4rem;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .advice-id {
+    color: hsl(150, 100%, 66%);
+    letter-spacing: 4px;
+    font-size: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .advice-text {
+    color: hsl(193, 38%, 86%);
+    font-size: 28px;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+  }
+  
+  .divider img {
+    width: 100%;
+  }
+  
+  .dice-btn {
+    background-color: hsl(150, 100%, 66%);
+    border: none;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  
+    position: absolute;
+    left: 50%;
+    bottom: -32px;
+    transform: translateX(-50%);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .dice-btn:hover {
+    box-shadow: 0 0 30px hsl(150, 100%, 66%);
+  }
+  
+  .dice-btn img {
+    width: 24px;
+    height: 24px;
+  }
+
+  /*.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+  }*/
+    
+  .attribution a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 11px;
+    font-size: 0.75rem;
+  }
+
+  @media (max-width: 375px) {
+    .advice-text {
+      font-size: 24px;
+    }
+  }
